@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- IMPORT GOOGLE ICONS -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <main class="main-container">   
+      
+
+        <header class="input-container">
+            <input class ="city-input" placeholder="Search City" type="text" name="city" placeholder="Enter city name">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                search
+                </span>
+
+            </button>
+        </header>
+        <section class="weather-info">
+            <div class="location-date-container">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                        </span>
+                        <h4 class="country-txt">Pandua</h4>
+                </div>
+                <h5 class="current-date-txt regular txt">Wed, 21 Nov</h5>
+            </div>
+            <div class="weather-summary-container">
+                 <img src="assets/weather/clouds.svg"  class="weather-summary-img">
+               <div class="weather-summary-info">
+                <h1 class="temp-txt">29 °C</h1>
+                <h3 class="condition-txt regular-txt">Cloudy</h3>
+
+               </div>
+            </div>
+
+                <div class="weather-conditions-container">
+
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+
+                    <div class="condition-item-info">
+                        <h4 class="condition-item-txt">Humidity</h4>
+                        <h5 class="humidity-value-txt">80%</h5>
+                    </div>
+                </div>
+
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+
+                    <div class="condition-item-info">
+                        <h4 class="condition-item-txt">Wind Speed</h4>
+                        <h5 class="wind-value-txt">2.4 M/s</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="forecast-items-container">
+
+            <div class="forecast-item">
+                <h5>Aug 10</h5>
+
+                <img src="assets/weather/clouds.svg"
+                    class="forecast-item-img">
+
+                <h5>29 °C</h5>
+            </div>
+
+            <div class="forecast-item">
+                <h5>Aug 11</h5>
+
+                <img src="assets/weather/clouds.svg"
+                    class="forecast-item-img">
+
+                <h5>30 °C</h5>
+            </div>
+
+            <div class="forecast-item">
+                <h5>Aug 12</h5>
+
+                <img src="assets/weather/clouds.svg"
+                    class="forecast-item-img">
+
+                <h5>35 °C</h5>
+            </div>
+
+        </div>
+        </section>
+
+            <section class="not-found-section" style="display:none;">
+        <img src="assets/message/not-found.png" class="not-found-img">
+        <h3>City Not Found</h3>
+        <p class="regular-txt">Please enter a valid city name</p>
+    </section>
+
+
+    </main>
+      <script src="script.js"></script>
+</body>
+</html>
